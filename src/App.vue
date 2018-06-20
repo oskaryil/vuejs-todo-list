@@ -1,14 +1,22 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">To-Do List</router-link> |
+      <router-link to="/about">About</router-link> 
     </div>
     <router-view/>
   </div>
 </template>
 
 <style lang="scss">
+body {
+  font-size: 1.5rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: auto;
+  color: #222;
+}
+
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

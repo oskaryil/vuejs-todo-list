@@ -4,7 +4,14 @@ import Vuex from "vuex";
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {},
+  state: {
+    todos: [{ todo: "buy groceries", edit: false }]
+  },
   mutations: {},
-  actions: {}
+  actions: {},
+  getters: {
+    todos(state) {
+      return state.todos;
+    }
+  }
 });
